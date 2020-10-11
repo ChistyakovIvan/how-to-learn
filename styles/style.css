@@ -129,7 +129,7 @@
  }
 */
 
-.digits-title {
+.section-title {
 	width: 60%;
 	margin: 100px auto 20px;
 	text-align: center;
@@ -138,7 +138,7 @@
 	font-weight: bold;
 }
 
-.digits-subtitle {
+.section-subtitle {
 	width: 60%;
 	text-align: center;
 	margin: 0 auto;
@@ -233,7 +233,7 @@ margin: 0 auto 0;
 	overflow: hidden;
 }
 
-.kaufman-title_theme_dark {
+.section-title_theme_dark {
 	width: 60%;
 	margin: 90px auto 20px;
 	text-align: center;
@@ -242,7 +242,7 @@ margin: 0 auto 0;
 	font-weight: bold;
 }
 
-.kaufman-subtitle_theme_dark {
+.section-subtitle_theme_dark {
 	/* Скажите, пожалуйста, почему нельзя использовать стили
 из первой таблицы, применив ко всей таблице белый цвет шрифта (для theme_dark)?*/
 
@@ -323,35 +323,33 @@ margin: 0 auto 0;
 }
 
 /*
-.footer_column {
+.footer__column {
 
 }
 */
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
 	flex-basis: 711px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footer__author {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.footer__author_text {
-	padding: 18px 0;
+	padding: 0;
 	line-height: 25px;
 	font-size: 18px;
 	font-weight: normal;
 }
 
 /*
-.footer__column_content-info {
+.footer__column_content_info {
 
  }
 */
 
 /*
-.footer__column_content-social {
+.footer__column_content_social {
 
  }
 */
@@ -363,12 +361,12 @@ margin: 0 auto 0;
 	font-weight: bold;
 }
 
-.footer__column_links {
+.footer__column-links {
 	padding-inline-start: 0px;
 	list-style-type: none;
 }
 
-.footer__column_link {
+.footer__column-link {
 	color: #f2f2f2;
 	line-height: 30px;
 	font-size: 18px;
@@ -378,4 +376,6 @@ margin: 0 auto 0;
 
 .footer__social-icon {
 	margin-right: 10px;
+	width: 16px;
+	height: 16px;
 }

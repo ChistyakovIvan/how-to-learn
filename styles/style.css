@@ -14,10 +14,10 @@
 	min-height: 600px;
 	max-height: 756px;
 
-	/* выше установили ограничения для секции */
 	background-color: #f2f2f2;
 	display: flex;
 	position: relative;
+	overflow: hidden;
 }
 
 .logo {
@@ -81,11 +81,25 @@
 	right: 0;
 }
 
+.rotation-clockwise {
+	animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .description {
 	position: relative;
 	width: 80%;
 	min-width: 784px;
-	margin: 100px auto;
+	margin: 0 auto;
+	margin-top: 100px;
 }
 
 .two-columns {
@@ -145,6 +159,79 @@
 	line-height: 34px;
 	font-size: 24px;
 	font-weight: normal;
+}
+
+/* Beginning of the techniques */
+
+.techniques {
+	width: 80%;
+	margin: 100px auto 0;
+}
+
+.cards {
+	margin: 0 auto;
+	width: 920px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.cards__item {
+	width: 240px;
+	margin-bottom: 60px;
+	margin-right: 100px;
+}
+
+.cards__item:nth-child(3n + 3) {
+	margin-right: 0px;
+}
+
+.cards__title {
+	margin: 0 0 16px;
+
+	text-align: center;
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.cards__description {
+	text-align: center;
+	line-height: 23px;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.cards__image {
+	height: 160px;
+	width: 160px;
+	margin: 60px 40px 43px;
+	border-radius: 50%;
+}
+
+/* Beginning of the video */
+
+.video {
+	margin: 100px auto 0;
+}
+
+.video__iframes {
+	margin: 50px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.video__iframe {
+	width: 515px;
+	height: 316px;
+	margin-right: 20px;
+}
+
+.video__iframe:last-of-type {
+	margin-right: 0;
 }
 
 /* Beginning of the table */

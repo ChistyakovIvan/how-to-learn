@@ -218,10 +218,12 @@
 }
 
 .video__iframes {
-	margin: 50px auto 0;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	position: relative;
+	top: 50px;
 }
 
 .video__iframe {
@@ -461,8 +463,8 @@ margin: 0 auto 0;
 .resourses__logo-zone {
 	margin: 80px auto 217px;
 	width: 1100px;
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .resourses__logo {

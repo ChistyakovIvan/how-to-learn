@@ -8,3 +8,7 @@
 	font-weight: normal;
 	text-decoration: none;
 }
+
+.feinman__link:hover {
+	text-decoration: underline;
+}
